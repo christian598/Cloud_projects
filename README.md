@@ -1,5 +1,5 @@
 # Cloud_projects
-Collection of small cloud projects
+Collection of small cloud projects for learning purposes
 
 
 ## Projects
