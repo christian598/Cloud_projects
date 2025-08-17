@@ -25,4 +25,13 @@ Pipeline created in Nextflow, and executed on AWS Batch, input and output files 
 3. **Post QC**: Runs FastQC again on trimmed sequencing reads.
 4. **Output**: Results are outputted to the same S3 bucket.
 
+### 3. EC2 setup - Linux, AWS, Sys
+Services used: EC2, EFS, Docker, GitHub, Cron, Linux user groups  
+
+Markdown file documentation:
+1. **Setup EC2**: Install dependencies, mount volumes, configure storage, mount AWS EFS
+2. **Docker**: Build and push custom containers to AWS ECR
+3. **GitHub**: Setup SSH keys, push/pull
+4. **Cron Jobs**: Automate with Cron jobs.
+5. **User/Group**: Manage Linux groups, permissions, and storage access  
 
