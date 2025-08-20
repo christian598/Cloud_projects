@@ -48,9 +48,9 @@ Terraform will create AMI group and user, launch EC2 instance (T3-MICRO), Create
 4. **user_data.sh**: User data file that can be configured with commands that should be run on the instance after launch.
 
 RUN:
-terraform init
-terraform plan
-terraform apply
+terraform init,
+terraform plan,
+terraform apply.
 
 terraform destroy
 
