@@ -33,5 +33,25 @@ Markdown file documentation:
 2. **Docker**: Build and push custom containers to AWS ECR
 3. **GitHub**: Setup SSH keys, push/pull
 4. **Cron Jobs**: Automate with Cron jobs.
-5. **User/Group**: Manage Linux groups, permissions, and storage access  
+5. **User/Group**: Manage Linux groups, permissions, and storage access
+
+### 4. Infrastructure as Code - Terraform
+Services used: Terraform, Bash, AMI, EC2
+This project was for learning the concept of Infrastructure as Code. 
+
+Requirements before running - Setup AWS CLI (User should have Admin role), Install terraform (local)
+
+Terraform will create AMI group and user, launch EC2 instance (T3-MICRO), Create user/group on the linux server and set permissions for specific folder (user_data.sh).
+1. **main.tf**: The main configuration file to define which resources/services terraform will create/launch
+2. **variables.tf**: Variables/customizable parameters for example, region, EC2 AMI, EC2 type - Will be accessed by main.tf
+3. **outputs.tf**: This file can be used specific information about the run after launching. Example, show public IP for connecting to the instance.
+4. **user_data.sh**: User data file that can be configured with commands that should be run on the instance after launch.
+
+RUN:
+terraform init
+terraform plan
+terraform apply
+
+terraform destroy
+
 
